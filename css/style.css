@@ -1,0 +1,242 @@
+:root{
+    --main-color:#555555;
+    --secondary-color:#303030;
+    --white-color: #FFFFFF;
+    --transparent-color: rgba(157, 164, 189, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--main-color)
+    
+}
+
+.conteiner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+.section-title {
+    color: var(--secondary-color);
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+
+
+
+.section-header {
+    position: relative;
+    height: 800px;
+}
+.section-header__nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link{
+    text-decoration: none;
+    font-style: normal;
+}
+.section-header__logo{
+    margin-right: 132px;
+
+}
+.section-header__list {
+    display: flex;
+}
+
+.section-header__item{
+    margin-right: 30px;
+}
+.section-header__item:last-child {
+    margin-right: 0px;
+}
+.section-header__wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 130px;
+}
+
+
+.section-header__nav{
+    display: flex;
+} 
+
+.section-header__list{
+    display: flex;
+}
+.section-header__link{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--white-color);
+}
+.section-header__social {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 330px;
+    left: 20px;
+}
+.section-header__social-item{
+    margin-top: 40px;
+    transform: rotate(180deg);
+}
+.section-header__social-item span{
+    display: block;
+    background: #303030;
+    width: 2px;
+    height: 60px;
+}
+.section-header__social-link{
+    color: #303030;
+    writing-mode: vertical-rl;
+
+}
+.button {
+    height: 40px;
+    width: 160px;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.swiper {
+    height: 680px;
+    width: 1070px;
+}
+
+
+.swiper-position{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.swiper-button-prev::after, .swiper-button-next:after {
+    display: none;
+}
+
+
+.swiper-button {
+    display: flex;
+    justify-content: flex-start;
+    width: 60px;
+    height: 20px;
+    top: 616px;
+    left: auto;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+}
+
+.swiper-button{
+    display: flex;
+    width: 60px;
+    height: 20px;
+    top: 616px;
+    left: auto;
+    font: Open Sans, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.swiper-button-prev {
+    justify-content: flex-start;
+    left: auto;
+    right: 100px;
+    color: var(--transparent-color);
+    border-bottom: solid 2px var(--transparent-color);
+}
+.swiper-button-next {
+    justify-content: flex-end;
+    right: 20px;
+    border-bottom: solid 2px var(--white-color);
+    color: #FFFFFF;
+
+}
+.swiper-description{
+    position: absolute;
+    z-index: 2;
+    top: 272px;
+    left: 100px;
+}
+
+.swiper-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--transparent-color);
+    margin-bottom: 20px;
+}
+
+.swiper-title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.swiper-about{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+    right: 20px;
+}
+.swiper-pagination-bullet {
+    background: #9DA4BD;
+    width: 8px;
+    height: 2px;
+    border-radius: none;
+}
+
+.swiper-pagination-bullet-active{
+    background: #FFFFFF;
+    width: 18px;
+    height: 2px;
+}
